@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Home</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20220703132150">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/wnumb/1.2.0/wNumb.min.js?_v=20220703132150" integrity="sha512-igVQ7hyQVijOUlfg3OmcTZLwYJIBXU63xL9RC12xBHNpmGJAktDnzl9Iw0J4yrSaQtDxTTVlwhY730vphoVqJQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+	<div class="preloader" style="position: fixed; top: 0; left: 0; height: 100%; width: 100%; z-index: 20;display: flex;align-items: center;justify-content: center; background-color: #fff;">
+		<img src="img/icons/pulse-green.svg" alt="preloader">
+	</div>
+	<div class="wrapper">
+		<header data-scroll-show class="header header_anim">
+			<div class="header__container">
+
+				<div class="header__logo">
+					<a href="home.html" class="header__logo-link">
+						<img src="img/header/logo.svg" alt="greenshop">
+						<img src="img/header/logo-text.svg" alt="greenshop">
+					</a>
+				</div>
+				<div class="header__menu menu">
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item"><a href="home.html" class="menu__link">Home</a></li>
+							<li class="menu__item"><a href="shop.html" class="menu__link">Shop</a></li>
+							<li class="menu__item"><a href="#/" class="menu__link">Plant Care</a></li>
+							<li class="menu__item"><a href="#/" class="menu__link">Blogs</a></li>
+						</ul>
+					</nav>
+				</div>
+
+				<div class="header__actions actions-header">
+
+					<form action="#" class="actions-header__search ">
+						<input autocomplete="off" id="search" type="text" name="form[search]" placeholder="Type to search" class="actions-header__input">
+						<button class="actions-header__search-btn-submit _icon-search" type="submit"></button>
+						<button class="actions-header__search-btn _icon-search" type="button"></button>
+					</form>
+
+					<a href="cart.html" class="actions-header__cart cart ">
+						<div class="cart__icon _icon-cart">
+							<span class="cart__quantity"></span>
+						</div>
+						<div class="cart__body">
+							<div class="cart__items"></div>
+							<div class="cart__total-price"></div>
+						</div>
+					</a>
+
+
+					<button data-popup="#popup-login" data-da=".menu__body, 767.8" class="actions-header__login-btn btn btn_gradient _icon-login">Login</button>
+
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<section class="page__hero hero">
+				<div class="hero__container">
+					<div class="hero__body">
+						<div class="hero__content">
+							<div class="hero__welcome">
+								<div class="hero__subtitle">Welcome to GreenShop</div>
+								<h1 class="hero__title">Let’s Make a
+									Better <span>Planet</span></h1>
+								<div class="hero__text">We are an online plant shop offering a wide range of cheap and trendy
+									plants.
+									Use our plants to create an unique Urban Jungle. Order your favorite plants!</div>
+								<a href="#/" class="hero__btn btn btn_gradient">SHOP NOW</a>
+							</div>
+						</div>
+						<div class="hero__images">
+							<div class="hero__slider slider-hero ">
+								<div class="slider-hero__swiper ">
+									<div class="slider-hero__slide ">
+										<div class="slider-hero__image-ibg_contain">
+											<picture><source data-srcset="img/hero/image1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/hero/image1.png" alt=""></picture>
+										</div>
+									</div>
+									<div class="slider-hero__slide ">
+										<div class="slider-hero__image-ibg_contain">
+											<picture><source data-srcset="img/hero/image2.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/hero/image2.png" alt=""></picture>
+										</div>
+									</div>
+									<div class="slider-hero__slide ">
+										<div class="slider-hero__image-ibg_contain">
+											<picture><source data-srcset="img/hero/image3.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/hero/image3.png" alt=""></picture>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="hero__pagination"></div>
+					</div>
+				</div>
+			</section>
+			<section id="catalog" class="page__catalog catalog">
+				<div class="catalog__container">
+					<div class="catalog__aside menu-aside">
+						<div class="menu-aside__body">
+							<form action="#" class="menu-aside__filters">
+								<div class="menu-aside__categories-filter filter-category">
+									<h2 class="filter-category__title title-filter">Categories</h2>
+									<div class="filter-category__items">
+										<div class="filter-category__item item-filter">
+											<input type="checkbox" class="item-filter__input" name="House Plants" id="c1">
+											<label for="c1" class="item-filter__label">
+												<span class="item-filter__name">House Plants</span>
+												<span class="item-filter__quantity">33</span>
+											</label>
+										</div>
+										<div class="filter-category__item item-filter">
+											<input type="checkbox" class="item-filter__input" name="Potter Plants" id="c2">
+											<label for="c2" class="item-filter__label">
+												<span class="item-filter__name">Potter Plants</span>
+												<span class="item-filter__quantity">12</span>
+											</label>
+										</div>
+										<div class="filter-category__item item-filter">
+											<input type="checkbox" class="item-filter__input" name="Seeds" id="c3">
+											<label for="c3" class="item-filter__label">
+												<span class="item-filter__name">Seeds</span>
+												<span class="item-filter__quantity">65</span>
+											</label>
+										</div>
+										<div class="filter-category__item item-filter">
+											<input type="checkbox" class="item-filter__input" name="Small Plants" id="c4">
+											<label for="c4" class="item-filter__label">
+												<span class="item-filter__name">Small Plants</span>
+												<span class="item-filter__quantity">39</span>
+											</label>
+										</div>
+										<div class="filter-category__item item-filter">
+											<input type="checkbox" class="item-filter__input" name="Big Plants" id="c5">
+											<label for="c5" class="item-filter__label">
+												<span class="item-filter__name">Big Plants</span>
+												<span class="item-filter__quantity">23</span>
+											</label>
+										</div>
+										<div class="filter-category__item item-filter">
+											<input type="checkbox" class="item-filter__input" name="Succulents" id="c6">
+											<label for="c6" class="item-filter__label">
+												<span class="item-filter__name">Succulents</span>
+												<span class="item-filter__quantity">17</span>
+											</label>
+										</div>
+										<div class="filter-category__item item-filter">
+											<input type="checkbox" class="item-filter__input" name="Terrariums" id="c7">
+											<label for="c7" class="item-filter__label">
+												<span class="item-filter__name">Terrariums</span>
+												<span class="item-filter__quantity">19</span>
+											</label>
+										</div>
+										<div class="filter-category__item item-filter">
+											<input type="checkbox" class="item-filter__input" name="Gardening" id="c8">
+											<label for="c8" class="item-filter__label">
+												<span class="item-filter__name">Gardening</span>
+												<span class="item-filter__quantity">13</span>
+											</label>
+										</div>
+										<div class="filter-category__item item-filter">
+											<input type="checkbox" class="item-filter__input" name="Accessories" id="c9">
+											<label for="c9" class="item-filter__label">
+												<span class="item-filter__name">Accessories</span>
+												<span class="item-filter__quantity">18</span>
+											</label>
+										</div>
+									</div>
+								</div>
+								<div class="menu-aside__price-filter filter-price">
+									<div class="filter-price__title title-filter">Price Range</div>
+									<div class="filter-price__body">
+										<div id="range" class="filter-price__range"></div>
+										<div class="filter-price__desc">
+											<span>Price:</span>
+											<span id="slider-price-value"></span>
+
+										</div>
+										<button class="filter-price__btn btn btn_gradient" type="submit">Filter</button>
+									</div>
+								</div>
+								<div class="menu-aside__size-filter filter-size">
+									<div class="filter-size__title title-filter">Size</div>
+									<div class="filter-size__items ">
+										<div class="filter-size__item item-filter">
+											<input type="checkbox" class="item-filter__input" name="Small" id="s1">
+											<label for="s1" class="item-filter__label">
+												<span class="item-filter__name">Small</span>
+												<span class="item-filter__quantity ">119</span>
+											</label>
+										</div>
+										<div class="filter-size__item item-filter">
+											<input type="checkbox" class="item-filter__input" name="Medium" id="s2">
+											<label for="s2" class="item-filter__label">
+												<span class="item-filter__name">Medium</span>
+												<span class="item-filter__quantity ">86</span>
+											</label>
+										</div>
+										<div class="filter-size__item item-filter">
+											<input type="checkbox" class="item-filter__input" name="Large" id="s3">
+											<label for="s3" class="item-filter__label">
+												<span class="item-filter__name">Large</span>
+												<span class="item-filter__quantity ">78</span>
+											</label>
+										</div>
+									</div>
+								</div>
+							</form>
+							<a href="#/" class="menu-aside__sale-block sale ">
+								<h3 class="sale__title">Super Sale</h3>
+								<div class="sale__subtitle">UP TO 75% OFF</div>
+								<div class="sale__image">
+									<picture><source data-srcset="img/sale/01.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/sale/01.png" alt="plants"></picture>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="catalog__products products ">
+						<div class="products__header">
+							<div class="products__filters">
+								<div class="products__filter">
+									<button type="button" name="All-plants" class="products__filter-item _checked">
+										All Plants</button>
+									<button type="button" name="New-Arrivals" class="products__filter-item">New Arrivals</button>
+									<button type="button" name="Sale" class="products__filter-item">Sale</button>
+								</div>
+								<div data-da=".menu-aside__filters, 767.8" class="products__sorting sorting ">
+									<h3 class="sorting__title">Sort by:</h3>
+									<select name="form[sorting]" class="sorting__select ">
+										<option class="sorting__option _icon-calling" value="1" selected>Default sorting</option>
+										<option class="sorting__option" value="2">By name</option>
+										<option class="sorting__option" value="3">By price</option>
+										<option class="sorting__option" value="4">Newest</option>
+									</select>
+								</div>
+							</div>
+							<button type="button" class="products__mobile-filter _icon-filter"></button>
+						</div>
+						<div class="products__list">
+
+
+						</div>
+						<ul class="products__footer pagination">
+							<li class="pagination__item">
+								<a href="#/" class="pagination__link _active">1</a>
+							</li>
+							<li class="pagination__item">
+								<a href="#/" class="pagination__link">2</a>
+							</li>
+							<li class="pagination__item">
+								<a href="#/" class="pagination__link">3</a>
+							</li>
+							<li class="pagination__item">
+								<a href="#/" class="pagination__link">4</a>
+							</li>
+							<li class="pagination__item">
+								<a href="#/" class="pagination__link _icon-arrow-right3"></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<div class="page__ads ads">
+				<div class="ads__container">
+					<div class="ads__items">
+						<article class="ads__item item-ads">
+							<div class="item-ads__image">
+								<picture><source data-srcset="img/ads/01.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/ads/01.png" alt="plant in the pot"></picture>
+							</div>
+							<div class="item-ads__content">
+								<h3 class="item-ads__title">Summer cactus
+									& succulents</h3>
+								<div class="item-ads__text">We are an online plant shop offering a wide range of cheap and
+									trendy plants</div>
+								<a href="#/" class="item-ads__btn btn btn_gradient _icon-arrow-right2">Find More</a>
+							</div>
+						</article>
+						<article class="ads__item item-ads">
+							<div class="item-ads__image">
+								<picture><source data-srcset="img/ads/01.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/ads/01.png" alt="plant in the pot"></picture>
+							</div>
+							<div class="item-ads__content">
+								<h3 class="item-ads__title">Styling Trends
+									& much more</h3>
+								<div class="item-ads__text">We are an online plant shop offering a wide range of cheap and
+									trendy plants</div>
+								<a href="#/" class="item-ads__btn btn btn_gradient _icon-arrow-right2">Find More</a>
+							</div>
+						</article>
+					</div>
+				</div>
+			</div>
+			<section class="page__blog blog">
+				<div class="blog__container">
+					<div class="blog__titles">
+						<h2 class="blog__title">Our Blog Posts</h2>
+						<div class="blog__subtitle">We are an online plant shop offering a wide range of cheap and trendy
+							plants.
+						</div>
+					</div>
+					<div class="blog__items">
+						<div class="blog__item item-blog">
+							<a href="#/" class="item-blog__image-ibg">
+								<picture><source data-srcset="img/blog/01.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/blog/01.jpg" alt="plants in the pot"></picture>
+							</a>
+							<div class="item-blog__body">
+								<div class="item-blog__header">
+									<span class="item-blog__date">September 12</span>
+									<span class="item-blog__read">Read in 6 minutes</span>
+								</div>
+								<a href="#/" class="item-blog__title">Cactus & Succulent
+									Care Tips</a>
+								<div class="item-blog__desc">Cacti are succulents are easy care plants for any home or patio.
+								</div>
+								<a href="#/" class="item-blog__button _icon-arrow-right1">Read more</a>
+							</div>
+						</div>
+						<div class="blog__item item-blog">
+							<a href="#/" class="item-blog__image-ibg">
+								<picture><source data-srcset="img/blog/02.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/blog/02.jpg" alt="plants in the pot"></picture>
+							</a>
+							<div class="item-blog__body">
+								<div class="item-blog__header">
+									<span class="item-blog__date">September 13</span>
+									<span class="item-blog__read">Read in 2 minutes</span>
+								</div>
+								<a href="#/" class="item-blog__title">Top 10 Succulents for
+									Your Home</a>
+								<div class="item-blog__desc">Best in hanging baskets. Prefers medium to high light.
+								</div>
+								<a href="#/" class="item-blog__button _icon-arrow-right1">Read more</a>
+							</div>
+						</div>
+						<div class="blog__item item-blog">
+							<a href="#/" class="item-blog__image-ibg">
+								<picture><source data-srcset="img/blog/03.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/blog/03.jpg" alt="plants in the pot"></picture>
+							</a>
+							<div class="item-blog__body">
+								<div class="item-blog__header">
+									<span class="item-blog__date">September 15</span>
+									<span class="item-blog__read">Read in 3 minutes</span>
+								</div>
+								<a href="#/" class="item-blog__title">Cacti & Succulent
+									Care Tips</a>
+								<div class="item-blog__desc">Cacti and succulents thrive in containers and because most are..
+								</div>
+								<a href="#/" class="item-blog__button _icon-arrow-right1">Read more</a>
+							</div>
+						</div>
+						<div class="blog__item item-blog">
+							<a href="#/" class="item-blog__image-ibg">
+								<picture><source data-srcset="img/blog/04.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/blog/04.jpg" alt="plants in the pot"></picture>
+							</a>
+							<div class="item-blog__body">
+								<div class="item-blog__header">
+									<span class="item-blog__date">September 15</span>
+									<span class="item-blog__read">Read in 2 minutes</span>
+								</div>
+								<a href="#/" class="item-blog__title">Best Houseplants
+									Room by Room</a>
+								<div class="item-blog__desc">The benefits of houseplants are endless. In addition to..
+								</div>
+								<a href="#/" class="item-blog__button _icon-arrow-right1">Read more</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__grid">
+					<div class="footer__item item-footer item-footer_top">
+						<div class="item-footer__icon">
+							<img src="img/footer/icon1.svg" alt="">
+						</div>
+						<div class="item-footer__content">
+							<h3 class="item-footer__title">Garden Care</h3>
+							<p class="item-footer__text">We are an online plant shop offering a wide range of cheap and trendy
+								plants.
+							</p>
+						</div>
+					</div>
+					<div class="footer__item item-footer item-footer_top">
+						<div class="item-footer__icon">
+							<img src="img/footer/icon2.svg" alt="">
+						</div>
+						<div class="item-footer__content">
+							<h3 class="item-footer__title">Plant Renovation</h3>
+							<p class="item-footer__text">We are an online plant shop offering a wide range of cheap and trendy
+								plants.
+							</p>
+						</div>
+					</div>
+					<div class="footer__item item-footer item-footer_top">
+						<div class="item-footer__icon">
+							<img src="img/footer/icon3.svg" alt="">
+						</div>
+						<div class="item-footer__content">
+							<h3 class="item-footer__title">Watering Graden</h3>
+							<p class="item-footer__text">We are an online plant shop offering a wide range of cheap and trendy
+								plants.
+							</p>
+						</div>
+					</div>
+					<div class="footer__item item-footer item-footer_top">
+						<h3 class="item-footer__title">Would you like to join newsletters?</h3>
+						<form class="item-footer__email-form" action="#">
+							<input autocomplete="off" type="text" data-required="email" name="form[email]" data-error="Incorrect email" placeholder="enter your email address..." class="item-footer__input input">
+							<button type="submit" class="item-footer__btn btn btn_gradient">Join</button>
+						</form>
+						<p class="item-footer__text">We usually post offers and challenges in newsletter. We’re your online
+							houseplant destination. We offer a wide range of houseplants and accessories shipped directly from our
+							(green)house to yours!
+						</p>
+					</div>
+					<div class="footer__item item-footer item-footer_middle">
+						<a href="#/" class="item-footer__icon">
+							<img src="img/header/logo.svg" alt="">
+							<img src="img/header/logo-text.svg" alt="">
+						</a>
+					</div>
+					<div class="footer__item item-footer item-footer_middle">
+						<a href="#/" class="item-footer__address _icon-location">
+							70 West Buckingham Ave.
+							Farmingdale, NY 11735
+						</a>
+					</div>
+					<div class="footer__item item-footer item-footer_middle">
+						<a href="mailto:contact@greenshop.com" class="item-footer__email _icon-message">
+							contact@greenshop.com
+						</a>
+					</div>
+					<div class="footer__item item-footer item-footer_middle">
+						<a href="tel:+8801911717490" class="item-footer__phone _icon-calling">
+							+88 01911 717 490
+						</a>
+					</div>
+					<div class="footer__item item-footer item-footer_bottom">
+						<div data-spollers="519.8, max" class="item-footer__menu menu-footer">
+							<div class="menu-footer__col">
+								<button type="button" data-spoller class="menu-footer__title _icon-arrow-right">My Account</button>
+								<ul class="menu-footer__list">
+									<li class="menu-footer__item"><a class="menu-footer__link" href="#/">My Account</a></li>
+									<li class="menu-footer__item"><a class="menu-footer__link" href="#/">Our stores</a></li>
+									<li class="menu-footer__item"><a class="menu-footer__link" href="#/">Contact us</a></li>
+									<li class="menu-footer__item"><a class="menu-footer__link" href="#/">Career</a></li>
+									<li class="menu-footer__item"><a class="menu-footer__link" href="#/">Specials</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="footer__item item-footer item-footer_bottom">
+						<div data-spollers="519.8, max" class="item-footer__menu menu-footer">
+							<div class="menu-footer__col">
+								<button type="button" data-spoller class="menu-footer__title _icon-arrow-right">Help & Guide</button>
+								<ul class="menu-footer__list">
+									<li class="menu-footer__item"><a class="menu-footer__link" href="#/">Help Center</a></li>
+									<li class="menu-footer__item"><a class="menu-footer__link" href="#/">How to Buy </a></li>
+									<li class="menu-footer__item"><a class="menu-footer__link" href="#/">Shipping & Delivery</a></li>
+									<li class="menu-footer__item"><a class="menu-footer__link" href="#/">Product Policy</a></li>
+									<li class="menu-footer__item"><a class="menu-footer__link" href="#/">How to Return</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="footer__item item-footer item-footer_bottom">
+						<div data-spollers="519.8, max" class="item-footer__menu menu-footer">
+							<div class="menu-footer__col">
+								<button type="button" data-spoller class="menu-footer__title _icon-arrow-right">Categories</button>
+								<ul class="menu-footer__list">
+									<li class="menu-footer__item"><a class="menu-footer__link" href="#/">House Plants </a></li>
+									<li class="menu-footer__item"><a class="menu-footer__link" href="#/">Potter Plants</a></li>
+									<li class="menu-footer__item"><a class="menu-footer__link" href="#/">Seeds Small</a></li>
+									<li class="menu-footer__item"><a class="menu-footer__link" href="#/">Plants</a></li>
+									<li class="menu-footer__item"><a class="menu-footer__link" href="#/">Accessories</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="footer__item item-footer item-footer_bottom">
+						<div data-spollers="519.8, max" class="item-footer__menu menu-footer">
+							<div class="menu-footer__col">
+								<button type="button" data-spoller class="menu-footer__title _icon-arrow-right">Social Media</button>
+
+								<div class="menu-footer__body">
+									<ul class="menu-footer__list">
+										<li class="menu-footer__item"><a class="menu-footer__link menu-footer__link_social _icon-fb" href="#/"></a></li>
+										<li class="menu-footer__item"><a class="menu-footer__link menu-footer__link_social _icon-instagram" href="#/"></a></li>
+										<li class="menu-footer__item"><a class="menu-footer__link menu-footer__link_social _icon-twitter " href="#/"> </a></li>
+										<li class="menu-footer__item"><a class="menu-footer__link menu-footer__link_social _icon-linkedin" href="#/"> </a></li>
+										<li class="menu-footer__item"><a class="menu-footer__link menu-footer__link_social _icon-union" href="#/"> </a></li>
+									</ul>
+
+									<div class="menu-footer__payment">
+										<h3 class="menu-footer__title">We accept</h3>
+										<div class="menu-footer__payment-icons">
+											<picture><source srcset="img/footer/payment.webp" type="image/webp"><img src="img/footer/payment.png" alt=""></picture>
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<div id="popup-login" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content login">
+				<div data-tabs class="tabs">
+					<nav data-tabs-titles class="login__navigation">
+						<button type="submit" class="login__title _tab-active">Login</button>
+						<button type="submit" class="login__title">Register</button>
+					</nav>
+					<div data-tabs-body class="login__content">
+						<div class="login__body">
+							<form action="#" class="login-form">
+								<h2 class="login-form__title">Enter your username and password to login.</h2>
+								<div class="login-form__email">
+									<input autocomplete="off" type="text" data-required="email" name="form[email]" data-error="Incorrect email" placeholder="Enter your email address" class="login-form__input input">
+								</div>
+								<div class="login-form__password">
+									<input autocomplete="off" type="password" name="form[password]" data-error="Error" placeholder="Enter your password" class="login-form__password-input input">
+									<button type="button" class="login-form__show-pass __viewpass _icon-show"></button>
+								</div>
+								<div class="login-form__forgot-password"><a href="#/" class="login-form__link-forgot-password">Forgot Password?</a></div>
+								<button type="submit" class="login-form__button btn btn_gradient">Login</button>
+							</form>
+							<div class="login-alternative">
+								<div class="login-alternative__subtitle"><span>Or login with</span></div>
+								<a href="#/" class="login-alternative__link login-alternative__link_google"><span>Login with
+										Google</span></a>
+								<a href="#/" class="login-alternative__link login-alternative__link_fb"><span>Login with
+										Facebook</span></a>
+							</div>
+						</div>
+						<div class="login__body">
+							<form action="#" class="login-form">
+								<h2 class="login-form__title">Enter your email and password to register.</h2>
+								<div class="login-form__username">
+									<input autocomplete="off" type="text" name="form[username]" data-error="" placeholder="Username" class="login-form__username-input input">
+								</div>
+								<div class="login-form__email">
+									<input autocomplete="off" type="email" name="form[email]" data-error="Incorrect email" placeholder="Enter your email address" class="login-form__input input">
+								</div>
+
+								<div class="login-form__password">
+									<input autocomplete="off" type="password" name="form[password]" data-error="Error" placeholder="Password" class="login-form__password-input input">
+									<button type="button" class="login-form__show-pass __viewpass _icon-show"></button>
+								</div>
+								<div class="login-form__password">
+									<input autocomplete="off" type="password" name="form[confirmPassword]" data-error="Error" placeholder="Confirm Password" class="login-form__password-input input">
+									<button type="button" class="login-form__show-pass __viewpass _icon-show"></button>
+								</div>
+								<div class="login-form__forgot-password">
+									<a href="#/" class="login-form__link-forgot-password">Forgot Password?</a>
+								</div>
+								<button type="submit" class="login-form__button btn btn_gradient">Register</button>
+							</form>
+							<div class="login-alternative">
+								<div class="login-alternative__subtitle"><span>Or login with</span></div>
+								<a href="#/" class="login-alternative__link login-alternative__link_google"><span>Login with
+										Google</span></a>
+								<a href="#/" class="login-alternative__link login-alternative__link_fb"><span>Login with
+										Facebook</span></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<button data-close type="button" class="popup__close"></button>
+			</div>
+		</div>
+	</div>
+
+
+
+	<div id="coupon-popup" class="cart__discount discount popup">
+		<div class="popup__wrapper discount">
+			<div class="popup__content discount__content">
+				<div class="discount__title">Coupon Apply</div>
+				<form action="#/" class="discount__form">
+					<input autocomplete="off" type="text" name="form[coupon]" data-error="Incorrect email" placeholder="Enter coupon code here..." class="discount__input">
+					<button type="submit" class="discount__btn btn btn_gradient">Join</button>
+				</form>
+				<button data-close type="button" class="popup__close"></button>
+			</div>
+
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20220703132150"></script>
+</body>
+
+</html>

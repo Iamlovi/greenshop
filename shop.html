@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Shop</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20220703132150">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/wnumb/1.2.0/wNumb.min.js?_v=20220703132150" integrity="sha512-igVQ7hyQVijOUlfg3OmcTZLwYJIBXU63xL9RC12xBHNpmGJAktDnzl9Iw0J4yrSaQtDxTTVlwhY730vphoVqJQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+	<div class="preloader" style="position: fixed; top: 0; left: 0; height: 100%; width: 100%; z-index: 20;display: flex;align-items: center;justify-content: center;background-color: #fff;">
+		<img src="img/icons/pulse-green.svg" alt="">
+	</div>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+
+				<div class="header__logo">
+					<a href="home.html" class="header__logo-link">
+						<img src="img/header/logo.svg" alt="greenshop">
+						<img src="img/header/logo-text.svg" alt="greenshop">
+					</a>
+				</div>
+				<div class="header__menu menu">
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item"><a href="home.html" class="menu__link">Home</a></li>
+							<li class="menu__item"><a href="shop.html" class="menu__link">Shop</a></li>
+							<li class="menu__item"><a href="#/" class="menu__link">Plant Care</a></li>
+							<li class="menu__item"><a href="#/" class="menu__link">Blogs</a></li>
+						</ul>
+					</nav>
+				</div>
+
+				<div class="header__actions actions-header">
+
+					<form action="#" class="actions-header__search ">
+						<input autocomplete="off" id="search" type="text" name="form[search]" placeholder="Type to search" class="actions-header__input">
+						<button class="actions-header__search-btn-submit _icon-search" type="submit"></button>
+						<button class="actions-header__search-btn _icon-search" type="button"></button>
+					</form>
+
+					<a href="cart.html" class="actions-header__cart cart ">
+						<div class="cart__icon _icon-cart">
+							<span class="cart__quantity"></span>
+						</div>
+						<div class="cart__body">
+							<div class="cart__items"></div>
+							<div class="cart__total-price"></div>
+						</div>
+					</a>
+
+
+					<button data-popup="#popup-login" data-da=".menu__body, 767.8" class="actions-header__login-btn btn btn_gradient _icon-login">Login</button>
+
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<div class="page__container">
+				<div class="page__breadcrumbs breadcrumbs">
+					<div class="breadcrumbs__container"></div>
+					<ul class="breadcrumbs__list">
+						<li class="breadcrumbs__item">
+							<a href="home.html" class="breadcrumbs__link">Home</a>
+						</li>
+						<li class="breadcrumbs__item">
+							<a href="#/" class="breadcrumbs__link">Shop</a>
+						</li>
+					</ul>
+				</div>
+				<div class="page__shop shop">
+					<div class="shop__wrapper">
+						<section class="shop__product-section">
+							<div class="shop__product product" data-id="1">
+								<div class="product__images">
+									<div class="product-slider _icon-search">
+										<div data-gallery class="product-slider__swiper ">
+
+											<a href="img/products/image1.png" class="product-slider__slide product-slider__image">
+												<picture><source data-srcset="img/products/image1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="product-slider__img" data-src="img/products/image1.png" alt=""></picture>
+											</a>
+											<a href="img/products/image1.png" class="product-slider__slide product-slider__image">
+												<picture><source data-srcset="img/products/image1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="product-slider__img" data-src="img/products/image1.png" alt=""></picture>
+											</a>
+											<a href="img/products/image1.png" class="product-slider__slide product-slider__image">
+												<picture><source data-srcset="img/products/image1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="product-slider__img" data-src="img/products/image1.png" alt=""></picture>
+											</a>
+											<a href="img/products/image1.png" class="product-slider__slide product-slider__image">
+												<picture><source data-srcset="img/products/image1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="product-slider__img" data-src="img/products/image1.png" alt=""></picture>
+											</a>
+
+										</div>
+									</div>
+									<div class="product-thumb">
+										<div class="product-thumb__swiper">
+											<div class="product-thumb__slide">
+												<div class="product-thumb__image">
+													<picture><source data-srcset="img/products/image1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/products/image1.png" alt=""></picture>
+												</div>
+											</div>
+											<div class="product-thumb__slide">
+												<div class="product-thumb__image">
+													<picture><source data-srcset="img/products/image1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/products/image1.png" alt=""></picture>
+												</div>
+											</div>
+											<div class="product-thumb__slide">
+												<div class="product-thumb__image">
+													<picture><source data-srcset="img/products/image1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/products/image1.png" alt=""></picture>
+												</div>
+											</div>
+											<div class="product-thumb__slide">
+												<div class="product-thumb__image">
+													<picture><source data-srcset="img/products/image1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/products/image1.png" alt=""></picture>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="product__info product-info">
+									<div class="product-info__header">
+										<h1 class="product-info__title">Barberton Daisy</h1>
+										<div class="product-info__price">$119</div>
+										<div class="product-info__review">
+											<div class="product-info__stars">
+												<span class="product-info__star product-info__star_gold _icon-star"></span>
+												<span class="product-info__star product-info__star_gold _icon-star"></span>
+												<span class="product-info__star product-info__star_gold _icon-star"></span>
+												<span class="product-info__star product-info__star_gold _icon-star"></span>
+												<span class="product-info__star product-info__star_gray _icon-star"></span>
+											</div>
+											<a href="#/" class="product-info__review-link">3 Customer Review</a>
+										</div>
+									</div>
+									<div class="product-info__body">
+										<h3 class="product-info__subtitle product-subtitle">Short Description:</h3>
+										<div class="product-info__desc">The ceramic cylinder planters come with a wooden stand to
+											help
+											elevate your plants off the ground. The ceramic cylinder planters come with a wooden
+											stand
+											to
+											help elevate your plants off the ground. </div>
+
+										<form action="#" class="product-info__form">
+											<div class="product-info__size size-select">
+												<h3 class="size-select__subtitle product-subtitle">Size:</h3>
+
+												<div class="size-select__items">
+													<div class="size-select__item">
+														<input id="c_1" data-error="Ошибка" class="size-select__input" type="radio" value="S" name="form[size]">
+														<label for="c_1" class="size-select__label">S</label>
+													</div>
+													<div class="size-select__item">
+														<input id="c_2" data-error="Ошибка" class="size-select__input" type="radio" value="M" name="form[size]">
+														<label for="c_2" class="size-select__label">M</label>
+													</div>
+													<div class="size-select__item">
+														<input id="c_3" data-error="Ошибка" class="size-select__input" type="radio" value="L" name="form[size]">
+														<label for="c_3" class="size-select__label">L</label>
+													</div>
+													<div class="size-select__item">
+														<input id="c_4" data-error="Ошибка" class="size-select__input" type="radio" value="XL" name="form[size]">
+														<label for="c_4" class="size-select__label">XL</label>
+													</div>
+												</div>
+
+
+											</div>
+
+											<div class="product-info__actions actions-product">
+												<div data-quantity class="actions-product__quantity quantity">
+													<button data-quantity-plus type="button" class="quantity__button quantity__button_plus"></button>
+													<div class="quantity__input">
+														<input data-quantity-value autocomplete="off" type="text" name="form[]" value="1">
+													</div>
+													<button data-quantity-minus type="button" class="quantity__button quantity__button_minus"></button>
+												</div>
+												<div class="actions-product__buttons">
+													<button type="button" class="actions-product__buy btn btn_gradient">Buy
+														NOW</button>
+
+													<div class="actions-product__cart btn">
+														<button type="button" class="actions-product__add-to-cart ">Add to
+															cart</button>
+														<a class="actions-product__link-to-cart _icon-cart" href="cart.html">Go to
+															cart</a>
+													</div>
+
+													<button type="button" class="actions-product__fav _icon-heart"></button>
+												</div>
+
+											</div>
+										</form>
+
+										<div class="product-info__spec spec">
+											<div class="spec__item">
+												<span class="spec__title">SKU:</span>
+												<div class="spec__desc">1995751877966</div>
+											</div>
+											<div class="spec__item">
+												<span class="spec__title">Categories: </span>
+												<div class="spec__desc">Potter Plants</div>
+											</div>
+											<div class="spec__item">
+												<span class="spec__title">Tags: </span>
+												<div class="spec__desc">Home, Garden, Plants</div>
+											</div>
+										</div>
+
+										<div class="product-info__social social">
+											<h3 class="social__subtitle product-subtitle">Share this products:</h3>
+											<div class="social__links">
+												<a href="#/" class="social__link _icon-fb-fill"></a>
+												<a href="#/" class="social__link _icon-twitter-fill"></a>
+												<a href="#/" class="social__link _icon-linkedin-fill"></a>
+												<a href="#/" class="social__link _icon-message1"></a>
+											</div>
+										</div>
+
+
+									</div>
+								</div>
+							</div>
+							<div class="shop__product-desc product-desc">
+								<div data-tabs data-tabs-animate class="product-desc__tabs">
+									<nav data-tabs-titles class="product-desc__navigation">
+										<button type="submit" class="product-desc__title _tab-active">Product Description</button>
+										<button type="submit" class="product-desc__title">Reviews (3)</button>
+
+									</nav>
+									<div data-tabs-body class="product-desc__content">
+										<div class="product-desc__body">
+											<p class="product-desc__text">
+												The ceramic cylinder planters come with a wooden stand to help elevate your plants
+												off
+												the
+												ground. The ceramic cylinder planters come with a wooden stand to help elevate your
+												plants
+												off the ground. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+												fringilla
+												augue
+												nec est tristique auctor. Donec non est at libero vulputate rutrum. Morbi ornare
+												lectus
+												quis
+												justo gravida semper. Nulla tellus mi, vulputate adipiscing cursus eu, suscipit id
+												nulla.
+											</p>
+
+											<p class="product-desc__text">
+												Pellentesque aliquet, sem eget laoreet ultrices, ipsum metus feugiat sem, quis
+												fermentum
+												turpis eros eget velit. Donec ac tempus ante. Fusce ultricies massa massa. Fusce
+												aliquam,
+												purus eget sagittis vulputate, sapien libero hendrerit est, sed commodo augue nisi
+												non
+												neque.
+												Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor, lorem et
+												placerat
+												vestibulum, metus nisi posuere nisl, in accumsan elit odio quis mi. Cras neque
+												metus,
+												consequat et blandit et, luctus a nunc. Etiam gravida vehicula tellus, in imperdiet
+												ligula
+												euismod eget. The ceramic cylinder planters come with a wooden stand to help elevate
+												your
+												plants off the ground.
+											</p>
+											<h3 class="product-desc__subtitle">Living Room:</h3>
+											<p class="product-desc__text">The ceramic cylinder planters come with a wooden stand to
+												help
+												elevate your plants off the
+												ground. The ceramic cylinder planters come with a wooden stand to help elevate your
+												plants
+												off the ground. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+											<h3 class="product-desc__subtitle">Dining Room:</h3>
+											<p class="product-desc__text">The benefits of houseplants are endless. In addition to
+												cleaning the air of harmful
+												toxins, they can help to improve your mood, reduce stress and provide you with
+												better
+												sleep. Fill every room of your home with houseplants and their restorative qualities
+												will
+												improve your life.</p>
+											<h3 class="product-desc__subtitle">Office:</h3>
+											<p class="product-desc__text">The ceramic cylinder planters come with a wooden stand to
+												help
+												elevate your plants off the
+												ground. The ceramic cylinder planters come with a wooden stand to help elevate your
+												plants
+												off the ground. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+										</div>
+										<div class="product-desc__body">
+											<div class="product-desc__review">
+												<div class="product-desc__subtitle">Mark</div>
+												<p class="product-desc__text">
+													Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore odio
+													exercitationem,
+													excepturi similique nulla, voluptatem reprehenderit neque a minima eaque tenetur?
+													Quos
+													fugit
+													voluptate enim quo sed, minima error molestias!
+												</p>
+											</div>
+											<div class="product-desc__review">
+												<div class="product-desc__subtitle">Anna</div>
+												<p class="product-desc__text">
+													Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel non, id enim
+													praesentium
+													eaque fugit obcaecati autem sint optio vitae, tenetur, ipsum suscipit
+												</p>
+											</div>
+											<div class="product-desc__review">
+												<div class="product-desc__subtitle">Dean</div>
+												<p class="product-desc__text">
+													Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima expedita
+													voluptatum
+													inventore ipsa consequuntur accusantium ut quibusdam ducimus culpa aliquid, unde
+													ea
+													aut
+													aspernatur, pariatur, accusamus explicabo veritatis. Aspernatur, nihil.
+												</p>
+											</div>
+										</div>
+
+									</div>
+								</div>
+							</div>
+						</section>
+						<section class="shop__related-product related-product">
+							<h3 class="related-product__title">Related Products</h3>
+							<div class=" related-product-slider">
+								<div class="related-product-slider__swiper">
+									<div class="related-product-slider__slide slide-related">
+										<a href="#/" class="slide-related__image-ibg">
+											<picture><source data-srcset="img/products/image4.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/products/image4.png" alt=""></picture>
+										</a>
+										<div class="slide-related__content">
+											<a href="#/" class="slide-related__title">Beach Spider Lily</a>
+											<div class="slide-related__price">$129.00</div>
+										</div>
+									</div>
+
+									<div class="related-product-slider__slide slide-related">
+										<a href="#/" class="slide-related__image-ibg">
+											<picture><source data-srcset="img/products/image3.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/products/image3.png" alt=""></picture>
+										</a>
+										<div class="slide-related__content">
+											<a href="#/" class="slide-related__title">Blushing Bromeliad</a>
+											<div class="slide-related__price">$139.00</div>
+										</div>
+									</div>
+
+									<div class="related-product-slider__slide slide-related">
+										<a href="#/" class="slide-related__image-ibg">
+											<picture><source data-srcset="img/products/image5.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/products/image5.png" alt=""></picture>
+										</a>
+										<div class="slide-related__content">
+											<a href="#/" class="slide-related__title">Aluminum Plant</a>
+											<div class="slide-related__price">$179.00</div>
+										</div>
+									</div>
+
+									<div class="related-product-slider__slide slide-related">
+										<a href="#/" class="slide-related__image-ibg">
+											<picture><source data-srcset="img/products/image6.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/products/image6.png" alt=""></picture>
+										</a>
+										<div class="slide-related__content">
+											<a href="#/" class="slide-related__title">Bird's Nest Fern</a>
+											<div class="slide-related__price">$99.00</div>
+										</div>
+									</div>
+
+									<div class="related-product-slider__slide slide-related">
+										<a href="#/" class="slide-related__image-ibg">
+											<picture><source data-srcset="img/products/image7.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/products/image7.png" alt=""></picture>
+										</a>
+										<div class="slide-related__content">
+											<a href="#/" class="slide-related__title">Chinese Evergreen</a>
+											<div class="slide-related__price">$39.00</div>
+										</div>
+									</div>
+									<div class="related-product-slider__slide slide-related">
+										<a href="#/" class="slide-related__image-ibg">
+											<picture><source data-srcset="img/products/image4.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/products/image4.png" alt=""></picture>
+										</a>
+										<div class="slide-related__content">
+											<a href="#/" class="slide-related__title">Beach Spider Lily</a>
+											<div class="slide-related__price">$129.00</div>
+										</div>
+									</div>
+
+									<div class="related-product-slider__slide slide-related">
+										<a href="#/" class="slide-related__image-ibg">
+											<picture><source data-srcset="img/products/image3.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/products/image3.png" alt=""></picture>
+										</a>
+										<div class="slide-related__content">
+											<a href="#/" class="slide-related__title">Blushing Bromeliad</a>
+											<div class="slide-related__price">$139.00</div>
+										</div>
+									</div>
+
+									<div class="related-product-slider__slide slide-related">
+										<a href="#/" class="slide-related__image-ibg">
+											<picture><source data-srcset="img/products/image5.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/products/image5.png" alt=""></picture>
+										</a>
+										<div class="slide-related__content">
+											<a href="#/" class="slide-related__title">Aluminum Plant</a>
+											<div class="slide-related__price">$179.00</div>
+										</div>
+									</div>
+
+									<div class="related-product-slider__slide slide-related">
+										<a href="#/" class="slide-related__image-ibg">
+											<picture><source data-srcset="img/products/image6.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/products/image6.png" alt=""></picture>
+										</a>
+										<div class="slide-related__content">
+											<a href="#/" class="slide-related__title">Bird's Nest Fern</a>
+											<div class="slide-related__price">$99.00</div>
+										</div>
+									</div>
+
+									<div class="related-product-slider__slide slide-related">
+										<a href="#/" class="slide-related__image-ibg">
+											<picture><source data-srcset="img/products/image7.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/products/image7.png" alt=""></picture>
+										</a>
+										<div class="slide-related__content">
+											<a href="#/" class="slide-related__title">Chinese Evergreen</a>
+											<div class="slide-related__price">$39.00</div>
+										</div>
+									</div>
+									<div class="related-product-slider__slide slide-related">
+										<a href="#/" class="slide-related__image-ibg">
+											<picture><source data-srcset="img/products/image4.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/products/image4.png" alt=""></picture>
+										</a>
+										<div class="slide-related__content">
+											<a href="#/" class="slide-related__title">Beach Spider Lily</a>
+											<div class="slide-related__price">$129.00</div>
+										</div>
+									</div>
+
+									<div class="related-product-slider__slide slide-related">
+										<a href="#/" class="slide-related__image-ibg">
+											<picture><source data-srcset="img/products/image3.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/products/image3.png" alt=""></picture>
+										</a>
+										<div class="slide-related__content">
+											<a href="#/" class="slide-related__title">Blushing Bromeliad</a>
+											<div class="slide-related__price">$139.00</div>
+										</div>
+									</div>
+
+									<div class="related-product-slider__slide slide-related">
+										<a href="#/" class="slide-related__image-ibg">
+											<picture><source data-srcset="img/products/image5.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/products/image5.png" alt=""></picture>
+										</a>
+										<div class="slide-related__content">
+											<a href="#/" class="slide-related__title">Aluminum Plant</a>
+											<div class="slide-related__price">$179.00</div>
+										</div>
+									</div>
+
+									<div class="related-product-slider__slide slide-related">
+										<a href="#/" class="slide-related__image-ibg">
+											<picture><source data-srcset="img/products/image6.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/products/image6.png" alt=""></picture>
+										</a>
+										<div class="slide-related__content">
+											<a href="#/" class="slide-related__title">Bird's Nest Fern</a>
+											<div class="slide-related__price">$99.00</div>
+										</div>
+									</div>
+
+									<div class="related-product-slider__slide slide-related">
+										<a href="#/" class="slide-related__image-ibg">
+											<picture><source data-srcset="img/products/image7.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/products/image7.png" alt=""></picture>
+										</a>
+										<div class="slide-related__content">
+											<a href="#/" class="slide-related__title">Chinese Evergreen</a>
+											<div class="slide-related__price">$39.00</div>
+										</div>
+									</div>
+
+
+								</div>
+								<div class="related-product-slider__pagination"></div>
+							</div>
+
+						</section>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__grid">
+					<div class="footer__item item-footer item-footer_top">
+						<div class="item-footer__icon">
+							<img src="img/footer/icon1.svg" alt="">
+						</div>
+						<div class="item-footer__content">
+							<h3 class="item-footer__title">Garden Care</h3>
+							<p class="item-footer__text">We are an online plant shop offering a wide range of cheap and trendy
+								plants.
+							</p>
+						</div>
+					</div>
+					<div class="footer__item item-footer item-footer_top">
+						<div class="item-footer__icon">
+							<img src="img/footer/icon2.svg" alt="">
+						</div>
+						<div class="item-footer__content">
+							<h3 class="item-footer__title">Plant Renovation</h3>
+							<p class="item-footer__text">We are an online plant shop offering a wide range of cheap and trendy
+								plants.
+							</p>
+						</div>
+					</div>
+					<div class="footer__item item-footer item-footer_top">
+						<div class="item-footer__icon">
+							<img src="img/footer/icon3.svg" alt="">
+						</div>
+						<div class="item-footer__content">
+							<h3 class="item-footer__title">Watering Graden</h3>
+							<p class="item-footer__text">We are an online plant shop offering a wide range of cheap and trendy
+								plants.
+							</p>
+						</div>
+					</div>
+					<div class="footer__item item-footer item-footer_top">
+						<h3 class="item-footer__title">Would you like to join newsletters?</h3>
+						<form class="item-footer__email-form" action="#">
+							<input autocomplete="off" type="text" data-required="email" name="form[email]" data-error="Incorrect email" placeholder="enter your email address..." class="item-footer__input input">
+							<button type="submit" class="item-footer__btn btn btn_gradient">Join</button>
+						</form>
+						<p class="item-footer__text">We usually post offers and challenges in newsletter. We’re your online
+							houseplant destination. We offer a wide range of houseplants and accessories shipped directly from our
+							(green)house to yours!
+						</p>
+					</div>
+					<div class="footer__item item-footer item-footer_middle">
+						<a href="#/" class="item-footer__icon">
+							<img src="img/header/logo.svg" alt="">
+							<img src="img/header/logo-text.svg" alt="">
+						</a>
+					</div>
+					<div class="footer__item item-footer item-footer_middle">
+						<a href="#/" class="item-footer__address _icon-location">
+							70 West Buckingham Ave.
+							Farmingdale, NY 11735
+						</a>
+					</div>
+					<div class="footer__item item-footer item-footer_middle">
+						<a href="mailto:contact@greenshop.com" class="item-footer__email _icon-message">
+							contact@greenshop.com
+						</a>
+					</div>
+					<div class="footer__item item-footer item-footer_middle">
+						<a href="tel:+8801911717490" class="item-footer__phone _icon-calling">
+							+88 01911 717 490
+						</a>
+					</div>
+					<div class="footer__item item-footer item-footer_bottom">
+						<div data-spollers="519.8, max" class="item-footer__menu menu-footer">
+							<div class="menu-footer__col">
+								<button type="button" data-spoller class="menu-footer__title _icon-arrow-right">My Account</button>
+								<ul class="menu-footer__list">
+									<li class="menu-footer__item"><a class="menu-footer__link" href="#/">My Account</a></li>
+									<li class="menu-footer__item"><a class="menu-footer__link" href="#/">Our stores</a></li>
+									<li class="menu-footer__item"><a class="menu-footer__link" href="#/">Contact us</a></li>
+									<li class="menu-footer__item"><a class="menu-footer__link" href="#/">Career</a></li>
+									<li class="menu-footer__item"><a class="menu-footer__link" href="#/">Specials</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="footer__item item-footer item-footer_bottom">
+						<div data-spollers="519.8, max" class="item-footer__menu menu-footer">
+							<div class="menu-footer__col">
+								<button type="button" data-spoller class="menu-footer__title _icon-arrow-right">Help & Guide</button>
+								<ul class="menu-footer__list">
+									<li class="menu-footer__item"><a class="menu-footer__link" href="#/">Help Center</a></li>
+									<li class="menu-footer__item"><a class="menu-footer__link" href="#/">How to Buy </a></li>
+									<li class="menu-footer__item"><a class="menu-footer__link" href="#/">Shipping & Delivery</a></li>
+									<li class="menu-footer__item"><a class="menu-footer__link" href="#/">Product Policy</a></li>
+									<li class="menu-footer__item"><a class="menu-footer__link" href="#/">How to Return</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="footer__item item-footer item-footer_bottom">
+						<div data-spollers="519.8, max" class="item-footer__menu menu-footer">
+							<div class="menu-footer__col">
+								<button type="button" data-spoller class="menu-footer__title _icon-arrow-right">Categories</button>
+								<ul class="menu-footer__list">
+									<li class="menu-footer__item"><a class="menu-footer__link" href="#/">House Plants </a></li>
+									<li class="menu-footer__item"><a class="menu-footer__link" href="#/">Potter Plants</a></li>
+									<li class="menu-footer__item"><a class="menu-footer__link" href="#/">Seeds Small</a></li>
+									<li class="menu-footer__item"><a class="menu-footer__link" href="#/">Plants</a></li>
+									<li class="menu-footer__item"><a class="menu-footer__link" href="#/">Accessories</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="footer__item item-footer item-footer_bottom">
+						<div data-spollers="519.8, max" class="item-footer__menu menu-footer">
+							<div class="menu-footer__col">
+								<button type="button" data-spoller class="menu-footer__title _icon-arrow-right">Social Media</button>
+
+								<div class="menu-footer__body">
+									<ul class="menu-footer__list">
+										<li class="menu-footer__item"><a class="menu-footer__link menu-footer__link_social _icon-fb" href="#/"></a></li>
+										<li class="menu-footer__item"><a class="menu-footer__link menu-footer__link_social _icon-instagram" href="#/"></a></li>
+										<li class="menu-footer__item"><a class="menu-footer__link menu-footer__link_social _icon-twitter " href="#/"> </a></li>
+										<li class="menu-footer__item"><a class="menu-footer__link menu-footer__link_social _icon-linkedin" href="#/"> </a></li>
+										<li class="menu-footer__item"><a class="menu-footer__link menu-footer__link_social _icon-union" href="#/"> </a></li>
+									</ul>
+
+									<div class="menu-footer__payment">
+										<h3 class="menu-footer__title">We accept</h3>
+										<div class="menu-footer__payment-icons">
+											<picture><source srcset="img/footer/payment.webp" type="image/webp"><img src="img/footer/payment.png" alt=""></picture>
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<div id="popup-login" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content login">
+				<div data-tabs class="tabs">
+					<nav data-tabs-titles class="login__navigation">
+						<button type="submit" class="login__title _tab-active">Login</button>
+						<button type="submit" class="login__title">Register</button>
+					</nav>
+					<div data-tabs-body class="login__content">
+						<div class="login__body">
+							<form action="#" class="login-form">
+								<h2 class="login-form__title">Enter your username and password to login.</h2>
+								<div class="login-form__email">
+									<input autocomplete="off" type="text" data-required="email" name="form[email]" data-error="Incorrect email" placeholder="Enter your email address" class="login-form__input input">
+								</div>
+								<div class="login-form__password">
+									<input autocomplete="off" type="password" name="form[password]" data-error="Error" placeholder="Enter your password" class="login-form__password-input input">
+									<button type="button" class="login-form__show-pass __viewpass _icon-show"></button>
+								</div>
+								<div class="login-form__forgot-password"><a href="#/" class="login-form__link-forgot-password">Forgot Password?</a></div>
+								<button type="submit" class="login-form__button btn btn_gradient">Login</button>
+							</form>
+							<div class="login-alternative">
+								<div class="login-alternative__subtitle"><span>Or login with</span></div>
+								<a href="#/" class="login-alternative__link login-alternative__link_google"><span>Login with
+										Google</span></a>
+								<a href="#/" class="login-alternative__link login-alternative__link_fb"><span>Login with
+										Facebook</span></a>
+							</div>
+						</div>
+						<div class="login__body">
+							<form action="#" class="login-form">
+								<h2 class="login-form__title">Enter your email and password to register.</h2>
+								<div class="login-form__username">
+									<input autocomplete="off" type="text" name="form[username]" data-error="" placeholder="Username" class="login-form__username-input input">
+								</div>
+								<div class="login-form__email">
+									<input autocomplete="off" type="email" name="form[email]" data-error="Incorrect email" placeholder="Enter your email address" class="login-form__input input">
+								</div>
+
+								<div class="login-form__password">
+									<input autocomplete="off" type="password" name="form[password]" data-error="Error" placeholder="Password" class="login-form__password-input input">
+									<button type="button" class="login-form__show-pass __viewpass _icon-show"></button>
+								</div>
+								<div class="login-form__password">
+									<input autocomplete="off" type="password" name="form[confirmPassword]" data-error="Error" placeholder="Confirm Password" class="login-form__password-input input">
+									<button type="button" class="login-form__show-pass __viewpass _icon-show"></button>
+								</div>
+								<div class="login-form__forgot-password">
+									<a href="#/" class="login-form__link-forgot-password">Forgot Password?</a>
+								</div>
+								<button type="submit" class="login-form__button btn btn_gradient">Register</button>
+							</form>
+							<div class="login-alternative">
+								<div class="login-alternative__subtitle"><span>Or login with</span></div>
+								<a href="#/" class="login-alternative__link login-alternative__link_google"><span>Login with
+										Google</span></a>
+								<a href="#/" class="login-alternative__link login-alternative__link_fb"><span>Login with
+										Facebook</span></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<button data-close type="button" class="popup__close"></button>
+			</div>
+		</div>
+	</div>
+
+
+
+	<div id="coupon-popup" class="cart__discount discount popup">
+		<div class="popup__wrapper discount">
+			<div class="popup__content discount__content">
+				<div class="discount__title">Coupon Apply</div>
+				<form action="#/" class="discount__form">
+					<input autocomplete="off" type="text" name="form[coupon]" data-error="Incorrect email" placeholder="Enter coupon code here..." class="discount__input">
+					<button type="submit" class="discount__btn btn btn_gradient">Join</button>
+				</form>
+				<button data-close type="button" class="popup__close"></button>
+			</div>
+
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20220703132150"></script>
+</body>
+
+</html>

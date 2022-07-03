@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Product Checkout</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20220703132150">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/wnumb/1.2.0/wNumb.min.js?_v=20220703132150" integrity="sha512-igVQ7hyQVijOUlfg3OmcTZLwYJIBXU63xL9RC12xBHNpmGJAktDnzl9Iw0J4yrSaQtDxTTVlwhY730vphoVqJQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+	<div class="preloader" style="position: fixed; top: 0; left: 0; height: 100%; width: 100%; z-index: 20;display: flex;align-items: center;justify-content: center;background-color: #fff;">
+		<img src="img/icons/pulse-green.svg" alt="">
+	</div>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__logo">
+					<a href="home.html" class="header__logo-link">
+						<img src="img/header/logo.svg" alt="greenshop">
+						<img src="img/header/logo-text.svg" alt="greenshop">
+					</a>
+				</div>
+				<div class="header__menu menu">
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item"><a href="home.html" class="menu__link">Home</a></li>
+							<li class="menu__item"><a href="shop.html" class="menu__link">Shop</a></li>
+							<li class="menu__item"><a href="#/" class="menu__link">Plant Care</a></li>
+							<li class="menu__item"><a href="#/" class="menu__link">Blogs</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="header__actions actions-header">
+					<form action="#" class="actions-header__search ">
+						<input autocomplete="off" id="search" type="text" name="form[search]" placeholder="Type to search" class="actions-header__input">
+						<button class="actions-header__search-btn-submit _icon-search" type="submit"></button>
+						<button class="actions-header__search-btn _icon-search" type="button"></button>
+					</form>
+					<a href="cart.html" class="actions-header__cart cart ">
+						<span class="cart__quantity"></span>
+						<div class="cart__icon _icon-cart"></div>
+					</a>
+					<button data-popup="#popup-login" data-da=".menu__body, 767.8" class="actions-header__login-btn btn btn_gradient _icon-login">Login</button>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<div class="page__container">
+				<div class="page__breadcrumbs breadcrumbs">
+
+					<ul class="breadcrumbs__list">
+						<li class="breadcrumbs__item">
+							<a href="home.html" class="breadcrumbs__link">Home</a>
+						</li>
+						<li class="breadcrumbs__item">
+							<a href="shop.html" class="breadcrumbs__link">Shop</a>
+						</li>
+						<li class="breadcrumbs__item">
+							<a href="#/" class="breadcrumbs__link">Checkout</a>
+						</li>
+					</ul>
+
+				</div>
+				<section class="page__order order">
+					<div class="order__form ">
+						<h1 class="order__title">Billing Address</h1>
+						<form action="#" class="order__form form-order">
+							<div class="form-order__item">
+								<h3 class="form-order__title">First Name</h3>
+								<input autocomplete="off" type="text" name="form[firstName]" data-error="Error" placeholder="" class="form-order__input">
+							</div>
+							<div class="form-order__item">
+								<h3 class="form-order__title">Last Name</h3>
+								<input autocomplete="off" type="text" name="form[lastName]" data-error="Error" placeholder="" class="form-order__input">
+							</div>
+							<div class="form-order__item">
+								<h3 class="form-order__title">Country / Region</h3>
+								<select name="form[country]" class="form-order__select">
+									<option value="" selected>Select a country / region</option>
+									<option value="1">Austria</option>
+									<option value="2">Belgium</option>
+									<option value="3">England</option>
+									<option value="4">France</option>
+								</select>
+							</div>
+							<div class="form-order__item">
+								<h3 class="form-order__title">Town / City</h3>
+								<input autocomplete="off" type="text" name="form[city]" data-error="Error" placeholder="" class="form-order__input">
+							</div>
+							<div class="form-order__item">
+								<h3 class="form-order__title">Street Address</h3>
+								<input autocomplete="off" type="text" name="form[city]" data-error="Error" placeholder="House number and street name" class="form-order__input">
+							</div>
+							<div class="form-order__item">
+								<input autocomplete="off" type="text" name="form[appartment]" data-error="Error" placeholder="Appartment, suite, unit, etc. (optional)" class="form-order__input">
+							</div>
+							<div class="form-order__item">
+								<h3 class="form-order__title">State</h3>
+								<select name="form[state]" class="form-order__select">
+									<option value="" selected>Select a state</option>
+									<option value="1">Austria</option>
+									<option value="2">Belgium</option>
+									<option value="3">England</option>
+									<option value="4">France</option>
+								</select>
+							</div>
+							<div class="form-order__item">
+								<h3 class="form-order__title">Zip</h3>
+								<input autocomplete="off" type="text" name="form[zip]" data-error="Error" placeholder="" class="form-order__input">
+							</div>
+							<div class="form-order__item">
+								<h3 class="form-order__title">Email Address</h3>
+								<input autocomplete="off" type="text" data-required="email" name="form[email]" data-error="Error" placeholder="" class="form-order__input">
+							</div>
+							<div class="form-order__item">
+								<h3 class="form-order__title">Phone Number</h3>
+								<div class="form-order__phone-number">
+									<select name="form[phoneCode]" class="form-order__select">
+										<option value="1">+966</option>
+										<option value="2">+955</option>
+										<option value="3">+965</option>
+										<option value="4">+956</option>
+									</select>
+									<input autocomplete="off" type="text" name="form[phoneNumber]" data-error="Error" placeholder="" class="form-order__input">
+								</div>
+							</div>
+							<div class="form-order__item form-order__item_wide">
+
+								<input id="c_1" data-error="Error" class="form-order__checkbox-input" type="checkbox" value="1" name="form[]">
+								<label for="c_1" class="form-order__checkbox-label">Ship to a different address?</label>
+
+							</div>
+
+							<div class="form-order__item">
+								<h3 class="form-order__title form-order__title_no-req">Order notes (optional)</h3>
+								<textarea name="form[orderNotes]" class="form-order__input form-order__input_textarea"></textarea>
+							</div>
+						</form>
+					</div>
+					<div class="order__body">
+						<div class="order__products">
+							<h2 class="order__title">Your Order</h2>
+							<div class="order__header">
+								<h3 class="order__tab-title">Products</h3>
+								<h3 class="order__tab-title">Subtotal</h3>
+							</div>
+							<div class="order__items">
+							</div>
+						</div>
+						<div class="order__totals totals">
+							<div class="totals__subtitle totals__subtitle_discount">Have a coupon code? <a data-popup="#coupon-popup" href="#/">Click here</a>
+							</div>
+							<div class="totals__subtitle"><span>Subtotal</span>
+								<span id="subtotal-price" class="totals__sub-total-price"></span>
+							</div>
+							<div class="totals__subtitle"><span>Coupon Discount</span>
+								<span>$0.00</span>
+							</div>
+							<div class="totals__subtitle"><span>Shiping</span>
+								<span id="ship-price" class="totals__ship-price"></span>
+							</div>
+							<a href="#/" class="totals__shipping-link"> View shipping charge
+							</a>
+							<div class="totals__total">
+								<span class="totals__total-title">Total</span>
+								<span id="total-price" class="totals__total-price"></span>
+							</div>
+							<div class="totals__payment payment">
+								<h3 class="payment__title">Payment Method</h3>
+								<ul class="payment__list">
+									<li class="payment__item">
+										<input id="r_1" class="payment__input" type="radio" value="visa" name="form[payment]">
+										<label for="r_1" class="payment__label"><picture><source srcset="img/footer/payment.webp" type="image/webp"><img src="img/footer/payment.png" alt=""></picture></label>
+									</li>
+									<li class="payment__item">
+										<input id="r_2" class="payment__input" type="radio" value="visa" name="form[payment]">
+										<label for="r_2" class="payment__label">Dorect bank transfer</label>
+									</li>
+									<li class="payment__item">
+										<input id="r_3" class="payment__input" type="radio" value="visa" name="form[payment]">
+										<label for="r_3" class="payment__label">Cash on delivery</label>
+									</li>
+
+								</ul>
+							</div>
+							<a href="#/" class="totals__checkout btn btn_gradient">Place Order</a>
+						</div>
+					</div>
+				</section>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__grid">
+					<div class="footer__item item-footer item-footer_top">
+						<div class="item-footer__icon">
+							<img src="img/footer/icon1.svg" alt="">
+						</div>
+						<div class="item-footer__content">
+							<h3 class="item-footer__title">Garden Care</h3>
+							<p class="item-footer__text">We are an online plant shop offering a wide range of cheap and trendy
+								plants.
+							</p>
+						</div>
+					</div>
+					<div class="footer__item item-footer item-footer_top">
+						<div class="item-footer__icon">
+							<img src="img/footer/icon2.svg" alt="">
+						</div>
+						<div class="item-footer__content">
+							<h3 class="item-footer__title">Plant Renovation</h3>
+							<p class="item-footer__text">We are an online plant shop offering a wide range of cheap and trendy
+								plants.
+							</p>
+						</div>
+					</div>
+					<div class="footer__item item-footer item-footer_top">
+						<div class="item-footer__icon">
+							<img src="img/footer/icon3.svg" alt="">
+						</div>
+						<div class="item-footer__content">
+							<h3 class="item-footer__title">Watering Graden</h3>
+							<p class="item-footer__text">We are an online plant shop offering a wide range of cheap and trendy
+								plants.
+							</p>
+						</div>
+					</div>
+					<div class="footer__item item-footer item-footer_top">
+						<h3 class="item-footer__title">Would you like to join newsletters?</h3>
+						<form class="item-footer__email-form" action="#">
+							<input autocomplete="off" type="text" data-required="email" name="form[email]" data-error="Incorrect email" placeholder="enter your email address..." class="item-footer__input input">
+							<button type="submit" class="item-footer__btn btn btn_gradient">Join</button>
+						</form>
+						<p class="item-footer__text">We usually post offers and challenges in newsletter. We’re your online
+							houseplant destination. We offer a wide range of houseplants and accessories shipped directly from our
+							(green)house to yours!
+						</p>
+					</div>
+					<div class="footer__item item-footer item-footer_middle">
+						<a href="#/" class="item-footer__icon">
+							<img src="img/header/logo.svg" alt="">
+							<img src="img/header/logo-text.svg" alt="">
+						</a>
+					</div>
+					<div class="footer__item item-footer item-footer_middle">
+						<a href="#/" class="item-footer__address _icon-location">
+							70 West Buckingham Ave.
+							Farmingdale, NY 11735
+						</a>
+					</div>
+					<div class="footer__item item-footer item-footer_middle">
+						<a href="mailto:contact@greenshop.com" class="item-footer__email _icon-message">
+							contact@greenshop.com
+						</a>
+					</div>
+					<div class="footer__item item-footer item-footer_middle">
+						<a href="tel:+8801911717490" class="item-footer__phone _icon-calling">
+							+88 01911 717 490
+						</a>
+					</div>
+					<div class="footer__item item-footer item-footer_bottom">
+						<div data-spollers="519.8, max" class="item-footer__menu menu-footer">
+							<div class="menu-footer__col">
+								<button type="button" data-spoller class="menu-footer__title _icon-arrow-right">My Account</button>
+								<ul class="menu-footer__list">
+									<li class="menu-footer__item"><a class="menu-footer__link" href="#/">My Account</a></li>
+									<li class="menu-footer__item"><a class="menu-footer__link" href="#/">Our stores</a></li>
+									<li class="menu-footer__item"><a class="menu-footer__link" href="#/">Contact us</a></li>
+									<li class="menu-footer__item"><a class="menu-footer__link" href="#/">Career</a></li>
+									<li class="menu-footer__item"><a class="menu-footer__link" href="#/">Specials</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="footer__item item-footer item-footer_bottom">
+						<div data-spollers="519.8, max" class="item-footer__menu menu-footer">
+							<div class="menu-footer__col">
+								<button type="button" data-spoller class="menu-footer__title _icon-arrow-right">Help & Guide</button>
+								<ul class="menu-footer__list">
+									<li class="menu-footer__item"><a class="menu-footer__link" href="#/">Help Center</a></li>
+									<li class="menu-footer__item"><a class="menu-footer__link" href="#/">How to Buy </a></li>
+									<li class="menu-footer__item"><a class="menu-footer__link" href="#/">Shipping & Delivery</a></li>
+									<li class="menu-footer__item"><a class="menu-footer__link" href="#/">Product Policy</a></li>
+									<li class="menu-footer__item"><a class="menu-footer__link" href="#/">How to Return</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="footer__item item-footer item-footer_bottom">
+						<div data-spollers="519.8, max" class="item-footer__menu menu-footer">
+							<div class="menu-footer__col">
+								<button type="button" data-spoller class="menu-footer__title _icon-arrow-right">Categories</button>
+								<ul class="menu-footer__list">
+									<li class="menu-footer__item"><a class="menu-footer__link" href="#/">House Plants </a></li>
+									<li class="menu-footer__item"><a class="menu-footer__link" href="#/">Potter Plants</a></li>
+									<li class="menu-footer__item"><a class="menu-footer__link" href="#/">Seeds Small</a></li>
+									<li class="menu-footer__item"><a class="menu-footer__link" href="#/">Plants</a></li>
+									<li class="menu-footer__item"><a class="menu-footer__link" href="#/">Accessories</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="footer__item item-footer item-footer_bottom">
+						<div data-spollers="519.8, max" class="item-footer__menu menu-footer">
+							<div class="menu-footer__col">
+								<button type="button" data-spoller class="menu-footer__title _icon-arrow-right">Social Media</button>
+
+								<div class="menu-footer__body">
+									<ul class="menu-footer__list">
+										<li class="menu-footer__item"><a class="menu-footer__link menu-footer__link_social _icon-fb" href="#/"></a></li>
+										<li class="menu-footer__item"><a class="menu-footer__link menu-footer__link_social _icon-instagram" href="#/"></a></li>
+										<li class="menu-footer__item"><a class="menu-footer__link menu-footer__link_social _icon-twitter " href="#/"> </a></li>
+										<li class="menu-footer__item"><a class="menu-footer__link menu-footer__link_social _icon-linkedin" href="#/"> </a></li>
+										<li class="menu-footer__item"><a class="menu-footer__link menu-footer__link_social _icon-union" href="#/"> </a></li>
+									</ul>
+
+									<div class="menu-footer__payment">
+										<h3 class="menu-footer__title">We accept</h3>
+										<div class="menu-footer__payment-icons">
+											<picture><source srcset="img/footer/payment.webp" type="image/webp"><img src="img/footer/payment.png" alt=""></picture>
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<div id="popup-login" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content login">
+				<div data-tabs class="tabs">
+					<nav data-tabs-titles class="login__navigation">
+						<button type="submit" class="login__title _tab-active">Login</button>
+						<button type="submit" class="login__title">Register</button>
+					</nav>
+					<div data-tabs-body class="login__content">
+						<div class="login__body">
+							<form action="#" class="login-form">
+								<h2 class="login-form__title">Enter your username and password to login.</h2>
+								<div class="login-form__email">
+									<input autocomplete="off" type="text" data-required="email" name="form[email]" data-error="Incorrect email" placeholder="Enter your email address" class="login-form__input input">
+								</div>
+								<div class="login-form__password">
+									<input autocomplete="off" type="password" name="form[password]" data-error="Error" placeholder="Enter your password" class="login-form__password-input input">
+									<button type="button" class="login-form__show-pass __viewpass _icon-show"></button>
+								</div>
+								<div class="login-form__forgot-password"><a href="#/" class="login-form__link-forgot-password">Forgot Password?</a></div>
+								<button type="submit" class="login-form__button btn btn_gradient">Login</button>
+							</form>
+							<div class="login-alternative">
+								<div class="login-alternative__subtitle"><span>Or login with</span></div>
+								<a href="#/" class="login-alternative__link login-alternative__link_google"><span>Login with
+										Google</span></a>
+								<a href="#/" class="login-alternative__link login-alternative__link_fb"><span>Login with
+										Facebook</span></a>
+							</div>
+						</div>
+						<div class="login__body">
+							<form action="#" class="login-form">
+								<h2 class="login-form__title">Enter your email and password to register.</h2>
+								<div class="login-form__username">
+									<input autocomplete="off" type="text" name="form[username]" data-error="" placeholder="Username" class="login-form__username-input input">
+								</div>
+								<div class="login-form__email">
+									<input autocomplete="off" type="email" name="form[email]" data-error="Incorrect email" placeholder="Enter your email address" class="login-form__input input">
+								</div>
+
+								<div class="login-form__password">
+									<input autocomplete="off" type="password" name="form[password]" data-error="Error" placeholder="Password" class="login-form__password-input input">
+									<button type="button" class="login-form__show-pass __viewpass _icon-show"></button>
+								</div>
+								<div class="login-form__password">
+									<input autocomplete="off" type="password" name="form[confirmPassword]" data-error="Error" placeholder="Confirm Password" class="login-form__password-input input">
+									<button type="button" class="login-form__show-pass __viewpass _icon-show"></button>
+								</div>
+								<div class="login-form__forgot-password">
+									<a href="#/" class="login-form__link-forgot-password">Forgot Password?</a>
+								</div>
+								<button type="submit" class="login-form__button btn btn_gradient">Register</button>
+							</form>
+							<div class="login-alternative">
+								<div class="login-alternative__subtitle"><span>Or login with</span></div>
+								<a href="#/" class="login-alternative__link login-alternative__link_google"><span>Login with
+										Google</span></a>
+								<a href="#/" class="login-alternative__link login-alternative__link_fb"><span>Login with
+										Facebook</span></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<button data-close type="button" class="popup__close"></button>
+			</div>
+		</div>
+	</div>
+
+
+
+	<div id="coupon-popup" class="cart__discount discount popup">
+		<div class="popup__wrapper discount">
+			<div class="popup__content discount__content">
+				<div class="discount__title">Coupon Apply</div>
+				<form action="#/" class="discount__form">
+					<input autocomplete="off" type="text" name="form[coupon]" data-error="Incorrect email" placeholder="Enter coupon code here..." class="discount__input">
+					<button type="submit" class="discount__btn btn btn_gradient">Join</button>
+				</form>
+				<button data-close type="button" class="popup__close"></button>
+			</div>
+
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20220703132150"></script>
+</body>
+
+</html>
